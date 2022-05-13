@@ -15,6 +15,7 @@ class Sqr extends Shape{
 class Per extends Sqr {
   constructor(height,width){
   super(height,width);
+  this.perimiter = (height*2) + (width * 2);
   }
 }
 
@@ -32,5 +33,8 @@ console.log(newShape);
 let newShape1 = new Sqr(10,10);
 console.log(newShape1);
 
-let newShape2 = new Area(10,10);
+let newShape2 = new Per(10,10);
 console.log(newShape2);
+
+let newShape3 = new Area(12,78);
+console.log(newShape3);
